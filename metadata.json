@@ -1,0 +1,6 @@
+{
+  "name": "FarmProfit AI",
+  "description": "Smart crop market intelligence system offering price prediction, transportation cost estimation, dynamic profit calculator, storage finder, demand forecasting, and voice assistant support.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
