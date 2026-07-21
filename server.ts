@@ -158,7 +158,7 @@ app.post("/api/predict", async (req, res) => {
     };
 
     const response = await ai.models.generateContent({
-      model: "gemini-3.5-flash",
+      model: "gemini-3.6-flash",
       contents: userPrompt,
       config: {
         responseMimeType: "application/json",
@@ -215,7 +215,7 @@ app.post("/api/voice-query", async (req, res) => {
     };
 
     const response = await ai.models.generateContent({
-      model: "gemini-3.5-flash",
+      model: "gemini-3.6-flash",
       contents: prompt,
       config: {
         responseMimeType: "application/json",
