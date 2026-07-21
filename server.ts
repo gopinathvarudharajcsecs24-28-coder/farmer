@@ -279,6 +279,9 @@ app.post("/api/tts", async (req, res) => {
   }
 });
 
+// Export Express app for serverless function use
+export { app };
+
 // Setup Vite Dev server or production static serving
 async function setupServer() {
   if (process.env.NODE_ENV !== "production") {
@@ -300,4 +303,6 @@ async function setupServer() {
   });
 }
 
-setupServer();
+if (process.env.NETLIFY !== "true") {
+  setupServer();
+}
